@@ -25,5 +25,7 @@
     "type": "",
     "url": ""
   },
+  "scripts" :
+  { "test" : "node server/bin/automigrate.js && mocha tests/"},
   "description": "api-testing-exercise"
 }

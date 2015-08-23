@@ -20,11 +20,11 @@
       "required": true
     },
     "origem": {
-      "type": "object",
+      "type": "string",
       "required": true
     },
     "destino": {
-      "type": "object",
+      "type": "string",
       "required": true
     },
     "duracao": {
@@ -36,7 +36,7 @@
       "required": true
     },
     "companhia": {
-      "type": "object",
+      "type": "string",
       "required": true
     }
   },

@@ -18,7 +18,7 @@
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "ACL": {
     "dataSource": "db",
@@ -33,7 +33,7 @@
     "public": false
   },
   "flight": {
-    "dataSource": "db",
+    "dataSource": "flights",
     "public": true
   }
 }

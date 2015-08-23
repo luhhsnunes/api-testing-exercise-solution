@@ -2,5 +2,11 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "flights": {
+    "name": "flights",
+    "connector": "mongodb",
+    "host": "0.0.0.0",
+    "port": 27017
   }
 }

@@ -8,22 +8,27 @@ var contentType = "Content-Type:application/json";
 describe("HTTP Requests on Flight API", function() {
     it("should create a new flight", function () {
         var response = chakram.post(URL,
-          require('./data.json'),
+          require('./post_data.json'),
           contentType
           );
         expect(response).to.have.status(200);
         return chakram.wait();
     });
 
-  xit("should update an existing flight", function () {
+  it("should update an existing flight", function () {
+    var response = chakram.put(URL,
+          require('./put_data.json'),
+          contentType
+          );
+        expect(response).to.have.status(200);
+        return chakram.wait();
 
   });
 
-  xit("should retrieve existing flights", function () {
-
-  });
-
-  xit("should delete an existing flight", function () {
+  it("should retrieve existing flights", function () {
+    var response = chakram.get(URL);
+    expect(response).to.have.status(200);
+    return chakram.wait();
 
   });
 
